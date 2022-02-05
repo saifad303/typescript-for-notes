@@ -1,9 +1,11 @@
+type VarType = {
+    name: string
+}
 
-
-function Result() {
+function Result({name}: VarType) {
     return (
       <div>
-        Git init
+        My name is {name}
       </div>
     );
   }

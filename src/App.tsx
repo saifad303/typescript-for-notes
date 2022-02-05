@@ -3,7 +3,7 @@ import Result from "./Result";
 function App() {
   return (
     <div>
-      <Result />
+      <Result name="Saif" />
     </div>
   );
 }
