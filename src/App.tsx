@@ -1,19 +1,5 @@
-import Result from "./Result";
-import Headings from "./Headings";
-import Oscar from "./Oscar";
-
 function App() {
-  return (
-    <div>
-      <Result status="success" />
-      <hr />
-      <Headings>Children of headings.</Headings>
-      <hr />
-      <Oscar>
-        <Headings>Oscar goes to decaprio</Headings>
-      </Oscar>
-    </div>
-  );
+  return <div>Git init</div>;
 }
 
 export default App;
