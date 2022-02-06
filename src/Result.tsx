@@ -1,12 +1,19 @@
+type StatusProps = {
+  status: "loading" | "success" | "error";
+};
 
+function Result({ status }: StatusProps) {
+  let message: string;
 
-function Result() {
-    return (
-      <div>
-        Git init
-      </div>
-    );
+  if (status === "loading") {
+    message = "loading";
+  } else if (status === "success") {
+    message = "success";
+  } else {
+    message = "error";
   }
-  
-  export default Result;
-  
+
+  return <div>{status}</div>;
+}
+
+export default Result;
